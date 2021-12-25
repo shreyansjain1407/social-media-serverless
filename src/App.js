@@ -11,6 +11,7 @@ function App() {
     useEffect(() => {
         const getPosts = async () => {
             const incomingPosts = await getPostsFromServer()
+            console.log(incomingPosts)
             setPosts(incomingPosts.posts)
             setProfile(incomingPosts.profile)
         }
