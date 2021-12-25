@@ -1,0 +1,33 @@
+{
+  "profile": {
+    "name": "Shreyans",
+    "username": "shreyansjain",
+    "about": "A full stack developer passionate about learning and implementing new technologies"
+  },
+  "posts": [
+    {
+      "id": "1",
+      "title": "Title 1",
+      "username": "User 1",
+      "content": "Content 1"
+    },
+    {
+      "id": "2",
+      "title": "Title 2",
+      "username": "User 2",
+      "content": "Content 2"
+    },
+    {
+      "id": "3",
+      "title": "Title 3",
+      "username": "User 3",
+      "content": "Content 3"
+    },
+    {
+      "id": "4",
+      "title": "Title 4",
+      "username": "User 4",
+      "content": "Content 4"
+    }
+  ]
+}
