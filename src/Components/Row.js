@@ -4,7 +4,7 @@ import Button from "./Button";
 import AddPost from "./AddPost";
 import {useState} from "react";
 
-const Row = ({ incomingPosts, profile }) => {
+const Row = ({ incomingPosts, profile, username, onToggle }) => {
     const [addPost, setAddPost] = useState(false)
     // console.log(incomingPosts)
     return (
@@ -20,7 +20,7 @@ const Row = ({ incomingPosts, profile }) => {
                     </div>
                 </div>
 
-                {addPost && (<AddPost />)}
+                {addPost && (<AddPost onToggle={onToggle} username={username}/>)}
                 {incomingPosts.length ? (<Posts incomingPosts={incomingPosts}/>):
                     (<h4>There are no posts available</h4>)}
             </div>

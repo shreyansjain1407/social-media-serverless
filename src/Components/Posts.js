@@ -1,7 +1,4 @@
 import Post from "./Post";
-import Button from "./Button";
-import AddPost from "./AddPost";
-import {useState} from "react";
 
 const Posts = ({ incomingPosts }) => {
 
