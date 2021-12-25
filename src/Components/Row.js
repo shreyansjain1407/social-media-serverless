@@ -16,7 +16,11 @@ const Row = ({ incomingPosts, profile, username, onToggle }) => {
                         <h2>TimeLine</h2>
                     </div>
                     <div className='col'>
-                        <Button value='Add Post' onClick={() => setAddPost(!addPost)}/>
+                        <Button
+                            value={addPost?'Close':'Add Post'}
+                            color={addPost?'btn-outline-danger':'btn-outline-success'}
+                            onClick={() => setAddPost(!addPost)}
+                        />
                     </div>
                 </div>
 

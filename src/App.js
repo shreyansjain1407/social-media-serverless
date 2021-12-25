@@ -9,6 +9,7 @@ function App() {
     const [profile, setProfile] = useState([])
     const [posts, setPosts] = useState([])
     const [username, setUsername] = useState("")
+    // const [showAddPost, setShowAddPost] = useState(false)
     useEffect(() => {
         const getPosts = async () => {
             const incomingPosts = await getPostsFromServer()

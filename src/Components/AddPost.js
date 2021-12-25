@@ -12,7 +12,6 @@ const AddPost = ({username, onToggle}) => {
             return
         }
         onToggle({title, username, content})
-
         setTitle('')
         setContent('')
     }
@@ -51,6 +50,7 @@ const AddPost = ({username, onToggle}) => {
                     />
                     <label htmlFor='floatingContent'>Content</label>
                 </div>
+
                 {/*<Button value='Submit Post' type='submit' onToggle={onToggle()}/>*/}
                 <input type='submit' value='Upload Post' className='btn btn-primary'/>
             </form>
