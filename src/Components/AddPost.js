@@ -26,6 +26,7 @@ const AddPost = ({username, onToggle}) => {
                         onChange={
                             (e) => setTitle((e.target.value))
                         }
+                        value={title}
                     />
                     <label htmlFor='floatingTitle'>Title</label>
                 </div>
@@ -47,6 +48,7 @@ const AddPost = ({username, onToggle}) => {
                         onChange={
                             (e) => setContent((e.target.value))
                         }
+                        value={content}
                     />
                     <label htmlFor='floatingContent'>Content</label>
                 </div>
