@@ -24,8 +24,8 @@ function App() {
     //Deploying a post to the KV
 
     const deployPost = async (uploadPost) => {
-        // const url = "https://social-media-worker.shreyansjain.workers.dev"
-        const url = "http://127.0.0.1:8787"
+        const url = "https://social-media-worker.shreyansjain.workers.dev"
+        // const url = "http://127.0.0.1:8787"
         const id = Math.floor(Math.random() * 10000) + 1
         const newPost = {id, ...uploadPost}
         setPosts([newPost, ...posts])
